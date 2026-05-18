@@ -27,4 +27,5 @@ print("accuracy:",accuracy_score(y_test,y_pred))
 #My own Knn.
 myknn = Knn(k=5)
 myknn.fit(x_train,y_train)
-myknn.predict(x_test)
+y_pred1=myknn.predict(x_test)
+print(accuracy_score(y_test,y_pred1))
